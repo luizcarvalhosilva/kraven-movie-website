@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tauri&display=swap');
 
+:root {
+    --base-font: "Tauri", sans-serif;
+    --color1: #643B1D;
+    --color2: #d99c02de;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +13,12 @@
     background-color: black;
     text-decoration: none;
     list-style: none;
+    font-family: var(--base-font);
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header {
@@ -27,13 +39,12 @@ ul {
 }
 
 li {
-    color: #643B1D;
+    color: var(--color1);
     cursor: pointer;
-    font-family: "Tauri", sans-serif;
     font-size: 19px;
 
     &:hover {
-        color: #d99c02de;
+        color: var(--color2);
     }
 }
 
@@ -42,7 +53,7 @@ li {
     height: auto;
 }
 
-.banner1 {
+.banner-principal {
     background-image: url("images/kraven-banner-large.jpeg");
     background-position: 50% 50%;
     background-size: cover;
@@ -50,64 +61,108 @@ li {
     height: 500px;
 }
 
-.trailer-container {
-    position: relative;
-    top: 50px;
+.container-geral {
     width: 100%;
     height: 400px;
     display: flex;
+    gap: 15px;
+    align-items: center;
     justify-content: center;
+    position: relative;
+    top: 25px;
+    left: 10%;
 }
 
-.content {
-    width: 60%;
+.trailler-container {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.trailer {
-    width: 80%;
-    position: relative;
-    bottom: 10%;
-    left: 25%;
-
+.about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
 }
 
 .sinopse {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 30px;
-}
-
-.description {
     color: white;
-    font-size: 19px;
-    font-family: "Tauri", sans-serif;
-    width: 80%;
+    text-align: justify;
+    width: 70%;
+    margin-bottom: 15px;
 }
 
 .buy-ticket {
-    display: flex;
-    justify-content: center;
     width: 200px;
-    height: 50px;
-    background-color: #643B1D;
+    height: 60px;
+    background-color: var(--color2);
     color: white;
-    padding: 8px 5px;
-    border-radius: 7px;
+    padding: 12px 8px;
+    border-radius: 5px;
     cursor: pointer;
     transition: .8s;
-    font-size: 17px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    outline: none;
     border: none;
+    outline: none;
     margin-top: 25px;
 
     &:hover {
-        color: #d99c02de;
         background-color: white;
+        color: var(--color2);
     }
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    padding: 0 0 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    transition: .7s;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+
+    &:hover {
+        transform: scale(1.02);
+        color: var(--color2);
+        font-weight: bold;
+        outline: var(--color1);
+    }
+}
+
+.banner1 {
+    background-image: url(images/kraven-o-cacador.jpg);
+}
+.banner2 {
+    background-image: url(images/nikolai-kravinoff.jpeg);
+}
+.banner3 {
+    background-image: url(images/calypso.jpeg);
 }
