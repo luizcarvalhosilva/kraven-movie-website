@@ -192,3 +192,63 @@ li {
         align-items: center;
     }
 }
+
+@media(max-width: 768px) {
+    .footer-nav {
+        display: block;
+    }
+
+    #mini-logo-nav {
+        width: 140px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner-principal {
+        background-position: 40%;
+    }
+
+    .container-geral {
+        position: relative;
+        top: 100px;
+        left: 20px;
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+
+        .trailler-container {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sinopse {
+            width: 100%;
+        }
+
+        .buy-ticket {
+            width: 100%;
+            margin-top: 25px;
+
+        }
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 250px;
+    }
+}
