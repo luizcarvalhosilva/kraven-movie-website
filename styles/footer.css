@@ -1,0 +1,24 @@
+.footer-root {
+    height: 300px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+
+    span {
+        color: white;
+        font-weight: bolder;   
+    }
+
+    .footer-nav {
+        /* display: none; */
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

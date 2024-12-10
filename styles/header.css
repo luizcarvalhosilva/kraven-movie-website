@@ -1,0 +1,31 @@
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 19px;
+
+    &:hover {
+        color: var(--color2);
+    }
+}
+
+.mini-logo {
+    width: 150px;
+    height: auto;
+}

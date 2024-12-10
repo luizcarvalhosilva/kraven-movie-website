@@ -1,60 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tauri&display=swap');
-
-:root {
-    --base-font: "Tauri", sans-serif;
-    --color1: #643B1D;
-    --color2: #d99c02de;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
-    text-decoration: none;
-    list-style: none;
-    font-family: var(--base-font);
-}
-
-body {
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-header {
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav {
-    width: 60%;
-}
-
-ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-li {
-    color: var(--color1);
-    cursor: pointer;
-    font-size: 19px;
-
-    &:hover {
-        color: var(--color2);
-    }
-}
-
-.mini-logo {
-    width: 150px;
-    height: auto;
-}
-
 .banner-principal {
-    background-image: url("images/kraven-banner-large.jpeg");
+    background-image: url("../images/kraven-banner-large.jpeg");
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -158,39 +103,15 @@ li {
 }
 
 .banner1 {
-    background-image: url(images/kraven-o-cacador.jpg);
+    background-image: url("../images/kraven-o-cacador.jpg");
 }
+
 .banner2 {
-    background-image: url(images/nikolai-kravinoff.jpeg);
+    background-image: url("../images/nikolai-kravinoff.jpeg");
 }
+
 .banner3 {
-    background-image: url(images/calypso.jpeg);
-}
-
-.footer-root {
-    height: 300px;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-
-    span {
-        color: white;
-        font-weight: bolder;
-        
-    }
-
-    .footer-nav {
-        /* display: none; */
-    }
-
-    .footer-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    background-image: url("../images/calypso.jpeg");
 }
 
 @media(max-width: 768px) {
