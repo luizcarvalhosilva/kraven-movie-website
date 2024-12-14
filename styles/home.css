@@ -90,15 +90,21 @@
     background-position: 50% 50%;
     border-radius: 5px;
     transition: .7s;
-    cursor: pointer;
-    color: white;
     font-size: 16px;
+
+    a {
+        color: white;
+        background-color: transparent;
+    }
+
+    a:hover {
+        color: var(--color2);
+        outline: var(--color1);
+    }
 
     &:hover {
         transform: scale(1.02);
-        color: var(--color2);
         font-weight: bold;
-        outline: var(--color1);
     }
 }
 
@@ -115,7 +121,7 @@
 }
 
 @media(max-width: 768px) {
-    
+
     .banner-principal {
         background-position: 40%;
     }
