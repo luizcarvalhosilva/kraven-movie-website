@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/home.css">
     <title>Kraven The Hunter - fotos</title>
 </head>
 <body>
     <header>
         <img class="mini-logo" id="mini-logo-nav" src="images/kraven-the-hunter-logo.jpeg">
-        <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="history.html">
-                    <li>Sobre</li>
-                </a>
-                <a href="photos.html">
-                    <li>Photos</li>
-                </a>
-                <a href="comentarios.html">
-                    <li>Coemtários</li>
-                </a>
+        <span class="bx bx-menu" id="menu-icon" onclick="displayMenu()"></span>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">Sobre</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
             </ul>
         </nav>
     </header>
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Sobre</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+        </ul>
+    </div>
 
 
     <footer class="footer-root">
@@ -52,5 +55,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="/scripts/base-script.js"></script>
 </body>
 </html>

@@ -115,18 +115,7 @@
 }
 
 @media(max-width: 768px) {
-    .footer-nav {
-        display: block;
-    }
-
-    #mini-logo-nav {
-        width: 140px;
-    }
-
-    nav {
-        display: none;
-    }
-
+    
     .banner-principal {
         background-position: 40%;
     }

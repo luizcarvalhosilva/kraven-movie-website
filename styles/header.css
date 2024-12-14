@@ -20,6 +20,10 @@ li {
     cursor: pointer;
     font-size: 19px;
 
+    a {
+        color: inherit;
+    }
+
     &:hover {
         color: var(--color2);
     }
@@ -28,4 +32,55 @@ li {
 .mini-logo {
     width: 150px;
     height: auto;
+}
+
+#menu-icon {
+    font-size: 34px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    width: 100vw;
+    display: none;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        margin-bottom: 8px;
+        padding: 2px 5px;
+    }
+
+    :hover {
+        background-color: var(--color1);
+    }
+}
+
+.modal-open {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .footer-nav {
+        display: block;
+    }
+
+    #mini-logo-nav {
+        width: 140px;
+    }
+
+    nav {
+        display: none;
+    }
 }
