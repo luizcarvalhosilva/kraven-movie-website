@@ -1,0 +1,9 @@
+.card-character {
+    display: flex;
+    
+    color: var(--color2);
+
+    p {
+        color: white;
+    }
+}
