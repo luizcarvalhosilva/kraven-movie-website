@@ -1,9 +1,59 @@
-.card-character {
-    display: flex;
-    
-    color: var(--color2);
+.cards-container {
+    margin-top: 30px;
+}
 
+.card-character {
+    margin-bottom: 30px;
+
+    .character-name {
+        color: var(--color2);
+        margin-top: 10px;
+    }
+    
     p {
         color: white;
+        margin-top: 15px;
+        line-height: 2;
+    }
+
+}
+
+.card-content {
+    display: flex;
+    gap: 12px;
+    width: 70%;
+    border: 1.6px solid var(--color1);
+    border-radius: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 360px) {
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 350px;
+        overflow: hidden;
+        
+        img {
+            width: 400px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    }
+
+    .card-info {
+        margin: 5px;
+        padding: auto;
+        text-align: center;
+
+        p {
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
     }
 }
