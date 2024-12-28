@@ -15,45 +15,61 @@
         margin-top: 15px;
         line-height: 2;
     }
-
 }
 
 .card-content {
     display: flex;
-    gap: 12px;
-    width: 70%;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    overflow: hidden;
     border: 1.6px solid var(--color1);
     border-radius: 15px;
     padding-right: 15px;
-}
-
-@media (min-width: 768px) {
     
+    img {
+        width: 400px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
 }
 
-@media (min-width: 360px) {
+.card-info {
+    margin: 5px;
+    padding: auto;
+    text-align: center;
+
+    p {
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1280px) {
     .card-content {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 350px;
-        overflow: hidden;
-        
+        width: 70%;
+        flex-direction: row;
+        gap: 20px;
+        max-height: 400px;
+
         img {
-            width: 400px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
+            border-top-right-radius: 0;
         }
     }
 
     .card-info {
-        margin: 5px;
-        padding: auto;
-        text-align: center;
-
+        text-align: left;
         p {
-            line-height: 1.4;
-            margin-bottom: 10px;
+            line-height: 2;
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .card-info {
+        overflow: scroll;
+    }
+    .card-info::-webkit-scrollbar {
+        display: none;
     }
 }
