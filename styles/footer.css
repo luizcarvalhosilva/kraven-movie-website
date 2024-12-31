@@ -12,10 +12,6 @@
         font-weight: bolder;   
     }
 
-    .footer-nav {
-        /* display: none; */
-    }
-
     .footer-list {
         display: flex;
         flex-direction: column;

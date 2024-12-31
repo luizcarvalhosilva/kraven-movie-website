@@ -1,5 +1,5 @@
 .banner-principal {
-    background-image: url("../images/kraven-banner-large.jpeg");
+    background-image: url("/images/kraven-banner-large.jpeg");
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -109,15 +109,15 @@
 }
 
 .banner1 {
-    background-image: url("../images/kraven-o-cacador.jpg");
+    background-image: url("/images/kraven-o-cacador.jpg");
 }
 
 .banner2 {
-    background-image: url("../images/nikolai-kravinoff.jpeg");
+    background-image: url("/images/nikolai-kravinoff.jpeg");
 }
 
 .banner3 {
-    background-image: url("../images/calypso.jpeg");
+    background-image: url("/images/calypso.jpeg");
 }
 
 @media(max-width: 768px) {
