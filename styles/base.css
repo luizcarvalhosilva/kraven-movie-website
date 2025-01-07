@@ -20,3 +20,8 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+
+a {
+    cursor: pointer;
+    color: var(--color2);
+}

@@ -1,36 +1,44 @@
-.info * {
-    /* background-color: gray; */
-}
-
 .info {
     display: flex;
     flex-direction: column;
     gap: 12px;
     color: white;
+    align-items: center;
+    margin-top: 30px;
     
-
+    * {
+        background-color: #444342;
+    }
 }
 
 .movie-poster-container {
     display: flex;
     justify-content: center;
+    background-color: black;
     
     .poster {
         width: 70%;
         border-radius: 10px;
+        border: 2px var(--color2) solid;
     }
 }
 
 .container-info {
     display: flex;
     flex-direction: column;
-
+    overflow: hidden;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(218, 106, 20, 0.511);
+    
+    * {
+        background-color: #444342;
+    }
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     line-height: 1.5;
 
@@ -39,20 +47,9 @@
     }
 
     span {
-        display: block;
+        
         margin-left: 10px;
     }
-}
-
-span::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-    background-image: url("../../images/svg/circle-right.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .container-cast {
@@ -60,4 +57,32 @@ span::before {
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
+    padding: 10px;
+
+    a {
+        color: var(--color2);
+    }
+
+    .staff-list {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    span:last-of-type {
+        font-weight: bold;
+        margin: 20px auto 10px;
+    }
+
+    .svg-arrow {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+}
+
+@media(min-width: 768px) {
+    .info {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
 }

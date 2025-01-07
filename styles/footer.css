@@ -7,6 +7,10 @@
     justify-content: space-around;
     background-color: black;
 
+    a {
+        color: var(--color2);
+    }
+
     span {
         color: white;
         font-weight: bolder;   

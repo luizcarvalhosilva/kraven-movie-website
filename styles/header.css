@@ -15,9 +15,8 @@ ul {
     justify-content: space-between;
 }
 
-li {
+.nav-list li {
     color: var(--color1);
-    cursor: pointer;
     font-size: 19px;
 
     a {
